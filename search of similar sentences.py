@@ -6,7 +6,7 @@ from collections import Counter
 import numpy as np
 
 def separate_data():
-	with open("C:\\Users\\Stas\\Desktop\\P\\data.txt") as data:
+	with open("path to text") as data:
 		sentences_list = data.readlines()
 	sentences_list = [re.split('[^a-z]', sentence.lower()) for sentence in sentences_list]
 	return sentences_list
